@@ -4,7 +4,7 @@ function collatz(x) {
 	length = 0;
 	console.log(x);
 	while (x != 1) {
-		if (x % 2 == 1) {
+		if (x % 2 == 0) {
 			x = x / 2;
 		} else {
 			x = 3 * x + 1;
@@ -16,4 +16,4 @@ function collatz(x) {
 }
 
 var start = 59, length = collatz(start);
-console.log("collatz(%d) has items", start);
+console.log("collatz(%d) has %d items", start, length);

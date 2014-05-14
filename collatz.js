@@ -2,12 +2,14 @@ console.log("Joshua's Collatz");
 
 function collatz(x) {
 	length = 0;
-	console.log("x");
+	console.log(x);
 	while (x != 1) {
 		if (x % 2 == 1) {
+			x = x / 2;
 		} else {
+			x = 3 * x + 1;
 		}
-		console.log("x");
+		console.log(x);
 		++length;
 	}
 	return length;

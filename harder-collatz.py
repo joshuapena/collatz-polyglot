@@ -1,4 +1,4 @@
-#!env python -t
+#!/usr/local/bin/python -t
 import sys
 from decimal import *
 

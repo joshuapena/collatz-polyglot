@@ -13,16 +13,14 @@ function collatz(x) {
 	return seq;
 }
 
-/*
 if (isNaN(process.argv[2])) {
 	console.log("Usage : collatz starting-number (default is 10)");
 	var start = 10;
 } else {
 	var start = parseInt(process.argv[2]);
 }
-*/
 
-var start = isNaN(process.argv[2]) ? 10 : parseInt(process.argv[2]);
+//var start = isNaN(process.argv[2]) ? 10 : parseInt(process.argv[2]);
 
 var seq = collatz(start);
 var size = seq.length;
